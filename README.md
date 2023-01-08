@@ -1,5 +1,5 @@
 ---
-# POC DO NOT USE
+# POC - DO NOT USE
 ---
 
 # otm-core
@@ -10,5 +10,5 @@ Attempt to build a core lib to manage an open threat model based on the the work
 - OTM Generator: https://github.com/iriusrisk/startleft
 
 ---
-# POC DO NOT USE
+# POC - DO NOT USE
 ---
