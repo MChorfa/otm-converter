@@ -12,3 +12,14 @@ Attempt to build a core lib to manage an open threat model based on the the work
 ---
 # POC - DO NOT USE
 ---
+
+
+## Init Project
+
+```shell
+# initialize the project
+go mod init github.com/MChorfa/otm-core
+go mod tidy
+# open project in VSCode
+code .
+```
