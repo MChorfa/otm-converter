@@ -55,7 +55,16 @@ go run main.go convert \
 # Release
 
 ```sh
+# https://goreleaser.com/quick-start/
+
 brew install goreleaser/tap/goreleaser
 goreleaser init
+goreleaser build --single-target --snapshot --rm-dist
+goreleaser release --snapshot --rm-dist
 
+# The minimum permissions the GITHUB_TOKEN should have to run this are write:packages
+export GITHUB_TOKEN="YOUR_GH_TOKEN"
+git tag -a v0.0.1 -m "Pre release"
+git push origin v0.1.0
+goreleaser release
 ```
