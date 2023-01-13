@@ -9,6 +9,7 @@ require (
 	github.com/rs/zerolog v1.28.0
 	github.com/spf13/cobra v1.6.1
 	goa.design/model v1.7.9
+	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (
@@ -32,4 +33,5 @@ require (
 	goa.design/goa/v3 v3.7.3 // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
 	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab // indirect
+
 )

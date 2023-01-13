@@ -51,3 +51,11 @@ go run main.go convert \
 --input-path "./test/integration/data/design.json" \
 --output-path "./test/integration/data"
 ```
+
+# Release
+
+```sh
+brew install goreleaser/tap/goreleaser
+goreleaser init
+
+```
