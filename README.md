@@ -23,3 +23,31 @@ go mod tidy
 # open project in VSCode
 code .
 ```
+
+
+
+## Build
+
+```shell
+# print the version of conveyor
+go run main.go --version
+conveyor version v0.0.1-alpha
+
+## 
+# build the converter CLI in version v0.0.1-alpha
+go build -o ./dist/converter -ldflags="-X 'github.com/MChorfa/otm-converter/cmd/converter.version=v0.0.1-alpha'" main.go
+
+# verify version is being set correctly
+./dist/converter --version
+> converter version v0.0.1-alpha
+```
+
+
+## Run
+
+```shell
+# converter
+go run main.go convert \
+--input-path "./test/integration/data/design.json" \
+--output-path "./test/integration/data"
+```
